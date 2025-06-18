@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEO Group - Industrial Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">JEO Group</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get in touch</a>
+            <button class="hamburger" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">JEO Group</div>
+            <button class="close-btn" onclick="closeSidebar()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-links">
+                <li><a href="#home" onclick="closeSidebar()"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#about" onclick="closeSidebar()"><i class="fas fa-info-circle"></i>About us</a></li>
+                <li><a href="#portfolio" onclick="closeSidebar()"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#services" onclick="closeSidebar()"><i class="fas fa-cogs"></i>Services</a></li>
+                <li><a href="#products" onclick="closeSidebar()"><i class="fas fa-box"></i>Products</a></li>
+            </ul>
+            <a href="#contact" class="sidebar-cta" onclick="closeSidebar()"><i class="fas fa-envelope"></i>Get in
+                touch</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Your Vision with Precision</h1>
+                <p>We are JEO Group, your trusted partner in the world of construction. With a legacy of excellence and
+                    a commitment to quality, we turn your visions into reality</p>
+                <a href="#about" class="hero-btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>JEO Group – Engineering Excellence. Empowering India.</h2>
+                <p class="about-subtitle">A Legacy of Innovation, A Future of Possibilities</p>
+                <p class="about-description">With a strong foundation built in 1987, JEO Group has emerged as one of
+                    India's leading multifaceted business conglomerates. We are driven by a vision to shape
+                    infrastructure, energize communities, and engineer solutions that uplift industries and lives alike.
+                </p>
+                <p class="about-description">Spanning a dynamic range of industries, JEO Group is a pioneer in the
+                    <strong>manufacturing of high-performance Distribution and Power Transformers</strong>, supported by
+                    <strong>large-scale fabrication facilities</strong>. As <strong>turnkey contractors</strong> for
+                    both <strong>Electrical and Civil works</strong>, we manage complex infrastructure projects from
+                    concept to completion with unmatched technical expertise and project management precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Group Section -->
+    <section id="portfolio" class="our-group">
+        <div class="container">
+            <div class="group-header">
+                <h2>Our Group</h2>
+                <p>Four Pillars of Excellence Under One Vision</p>
+            </div>
+            <div class="group-grid">
+                <div class="group-card">
+                    <div class="card-icon">
+                        <img src="images/Samriddhi-logo-1.png" alt="Samriddhi Industries" class="company-logo">
+                    </div>
+                    <h3>Samriddhi Industries</h3>
+                    <p>Leading manufacturer of high-performance electrical components and industrial solutions</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="group-card">
+                    <div class="card-icon">
+                        <img src="images/Engineers-Associates-logo.png" alt="Engineers Associates" class="company-logo">
+                    </div>
+                    <h3>Engineers Associates</h3>
+                    <p>Expert engineering consultancy and project management services for complex infrastructure</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="group-card">
+                    <div class="card-icon">
+                        <img src="images/Aditya-Logo-1.png" alt="Aditya Enterprises" class="company-logo">
+                    </div>
+                    <h3>Aditya Enterprises</h3>
+                    <p>Specialized in electrical contracting and turnkey project execution across India</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="group-card">
+                    <div class="card-icon">
+                        <img src="images/Elecfab-Logo.png" alt="Elec Fab" class="company-logo">
+                    </div>
+                    <h3>Elec Fab</h3>
+                    <p>Advanced fabrication facility for transmission and distribution line materials</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Culture Section -->
+    <section class="our-culture">
+        <div class="container">
+            <div class="culture-header">
+                <h2>Our Culture</h2>
+                <p>The Values That Drive Our Excellence</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Our success is deeply rooted in the satisfaction of our customers. We believe that when we serve
+                        our customers with dedication, excellence naturally follows. That's why exceeding expectations
+                        is not just a goal — it's our everyday commitment and culture.</p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Our Reputation is Our Greatest Asset</h3>
+                    <p>We operate with integrity, strictly adhering to all laws, regulations, and ethical standards that
+                        govern us. We understand that reputation, once compromised, is difficult to rebuild — and so, we
+                        protect it fiercely, knowing it's the foundation of lasting trust and long-term relationships.
+                    </p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Good is Not Good Enough</h3>
+                    <p>We believe that excellence is a journey, not a destination. While being great is a milestone, we
+                        always aim higher. By setting bold, ambitious goals, we push boundaries and drive our team to
+                        achieve more than what's expected — consistently raising the bar.</p>
+                </div>
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Strategic Project Management</h3>
+                    <p>Our project teams are handpicked from a pool of highly skilled technical and management
+                        professionals. Each project phase is managed with precision, ensuring the right expertise is
+                        applied at the right time to deliver efficient, timely, and high-quality outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Policy Section -->
+    <section class="our-policy">
+        <div class="container">
+            <div class="policy-content">
+                <div class="policy-header">
+                    <h2>Our Policy</h2>
+                    <div class="policy-statement">
+                        <p>Policy is to keep customers satisfied by continuous improvement and modernisation of the
+                            company's production methods.</p>
+                    </div>
+                </div>
+                <div class="policy-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2L15.09 8.26L22 9L16 14.74L17.18 21.02L12 18.77L6.82 21.02L8 14.74L2 9L8.91 8.26L12 2Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Continuous Improvement</h3>
+                        <p>We are committed to constantly enhancing our processes, technologies, and methodologies to
+                            deliver superior results.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L13.5 2.5L16.17 5.17L10.59 10.75C10.21 11.13 10.21 11.75 10.59 12.13L11.17 12.71L7.91 15.97C7.66 16.22 7.66 16.64 7.91 16.89L8.11 17.09C8.36 17.34 8.78 17.34 9.03 17.09L12.29 13.83L12.87 14.41C13.25 14.79 13.87 14.79 14.25 14.41L19.83 8.83L22.5 11.5L24 10L18 4H16L21 9Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Modernisation</h3>
+                        <p>We invest in cutting-edge technology and modern production methods to stay ahead of industry
+                            standards.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Customer Satisfaction</h3>
+                        <p>Every decision we make is guided by our commitment to exceeding customer expectations and
+                            delivering exceptional value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section id="products" class="image-slider">
+        <div class="container">
+            <div class="slider-header">
+                <h2>Our Industrial Excellence</h2>
+                <p>Showcasing Our Advanced Manufacturing Capabilities</p>
+            </div>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img src="images/qtq70fmfjpeg-4.jpg.jpeg" alt="Industrial Manufacturing" />
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Advanced Manufacturing</h3>
+                                <p>State-of-the-art production facilities with cutting-edge technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/qtq70fmfjpeg-14.jpg.jpeg" alt="Quality Control" />
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Quality Assurance</h3>
+                                <p>Rigorous testing and quality control processes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/qtq70fmfjpeg-15.jpg.jpeg" alt="Engineering Excellence" />
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Engineering Excellence</h3>
+                                <p>Precision engineering and innovative solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/qtq70fmfjpeg-16.jpg.jpeg" alt="Industrial Infrastructure" />
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Industrial Infrastructure</h3>
+                                <p>Comprehensive infrastructure development projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/qtq70fmfjpeg-17.jpg.jpeg" alt="Project Completion" />
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Project Excellence</h3>
+                                <p>Delivering projects with precision and quality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slider-nav prev" onclick="changeSlide(-1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slider-nav next" onclick="changeSlide(1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Areas of Expertise Section -->
+    <section id="services" class="expertise">
+        <div class="container">
+            <div class="expertise-header">
+                <h2>Our Areas of Expertise</h2>
+                <p>JEO Group brings together years of experience, technical mastery, and a commitment to excellence
+                    across multiple domains in the power and infrastructure sectors. Our capabilities span from
+                    manufacturing to turnkey project execution, making us a one-stop solution for high-quality,
+                    reliable, and scalable energy infrastructure.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Plant Design & Engineering</h3>
+                    </div>
+                    <p>Our in-house engineering team provides holistic plant layout planning, design optimization, and
+                        electrical system engineering. We ensure that every plant we help build operates efficiently,
+                        safely, and sustainably from day one.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>Solar Power Solutions</h3>
+                    </div>
+                    <p>Our solar division designs, installs, and maintains solar energy systems for residential,
+                        commercial, and industrial clients. From rooftop setups to ground-mounted solutions, we empower
+                        you to transition to clean and renewable energy with confidence.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Power & Distribution Transformer Manufacturing</h3>
+                    </div>
+                    <p>We specialize in the design and manufacturing of robust, high-performance power and distribution
+                        transformers. Our units are built to meet industry standards and customized for diverse voltage
+                        applications across utilities, commercial zones, and industrial plants.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Fabrication of HT/LT Line Materials</h3>
+                    </div>
+                    <p>Our advanced fabrication unit produces a wide range of transmission and distribution line
+                        materials including poles, clamps, brackets, cross-arms, and hardware. These components are
+                        essential for building durable, efficient, and safe HT/LT electrical infrastructure.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3>A-Class Electrical Contracting</h3>
+                    </div>
+                    <p>As a licensed A-Class Electrical Contractor, we execute turnkey electrical projects across rural
+                        and urban India. From substation installations and overhead line erections to complete
+                        electrification solutions, we handle every stage — from planning to commissioning — with
+                        professionalism and precision.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Operations & Maintenance (O&M)</h3>
+                    </div>
+                    <p>We offer end-to-end O&M services tailored to ensure the smooth functioning, longevity, and safety
+                        of your electrical systems and power plants. Our preventive and corrective maintenance solutions
+                        reduce downtime and maximize asset performance.</p>
+                    <div class="card-footer">
+                        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section id="contact" class="get-in-touch">
+        <div class="container">
+            <div class="touch-header">
+                <span class="touch-label">GET IN TOUCH</span>
+                <h2>Let's Build Something Amazing Together</h2>
+                <p>Ready to bring your idea to life? We'd love to hear about your project and show you how we can help.
+                </p>
+            </div>
+            <div class="touch-content">
+                <div class="touch-left">
+                    <h3>Let's Start the Conversation</h3>
+                    <p>Whether you need a new electrical infrastructure, power solutions, or want to discuss your next
+                        big idea, we're here to help. Get in touch and let's make it happen.</p>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Our Location</h4>
+                                <p>Balangir, Odisha, India</p>
+                                <span>Serving clients worldwide</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>contact@jeogroup.com</p>
+                                <span>We'll respond within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>+91 9938965598</p>
+                                <span>Monday - Friday: 9:00 AM - 7:00 PM IST</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+91 9938965598</p>
+                                <span>Quick chat about your project</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Follow Our Work</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="touch-right">
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <select>
+                                        <option>Select Project Type</option>
+                                        <option>Power Transformer Manufacturing</option>
+                                        <option>Solar Power Solutions</option>
+                                        <option>Electrical Contracting</option>
+                                        <option>Plant Design & Engineering</option>
+                                        <option>HT/LT Line Materials</option>
+                                        <option>Operations & Maintenance</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Tell us about your project *" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JEO Group</h3>
+                    <p>Engineering Excellence. Empowering India.</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2024 JEO Group. All rights reserved.</p>
+                    <p>Made with passion in India</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Functionality
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const hamburger = document.querySelector('.hamburger');
+
+            const isActive = sidebar.classList.contains('active');
+
+            if (isActive) {
+                closeSidebar();
+            } else {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                hamburger.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const hamburger = document.querySelector('.hamburger');
+
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close sidebar on escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function (e) {
+            const sidebar = document.querySelector('.sidebar');
+            const hamburger = document.querySelector('.hamburger');
+
+            if (sidebar.classList.contains('active') &&
+                !sidebar.contains(e.target) &&
+                !hamburger.contains(e.target)) {
+                closeSidebar();
+            }
+        });
+
+        // Image Slider Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+
+            // Update navigation dots
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === index) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+
+        // Auto-play slider
+        setInterval(nextSlide, 5000);
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
+</body>
+
+</html>
