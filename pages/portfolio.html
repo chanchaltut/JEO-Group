@@ -19,6 +19,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- AOS Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon.ico.png">
@@ -68,11 +70,10 @@
         </div>
         <ul class="mobile-nav-links">
             <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
             <li><a href="portfolio.html" class="active"><i class="fas fa-briefcase"></i> Portfolio</a></li>
             <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
             <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Get in touch</a></li>
         </ul>
     </nav>
 
@@ -192,20 +193,20 @@
         <div class="container">
             <div class="story-content">
                 <div class="story-text">
-                    <h2>Featured Projects</h2>
-                    <p>
+                    <h2 data-aos="fade-up">Featured Projects</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">
                         Our portfolio includes some of the most challenging and prestigious projects in the electrical
                         and infrastructure sector. Each project showcases our technical expertise, project management
                         capabilities, and commitment to quality.
                     </p>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="200">
                         From large-scale industrial installations to critical infrastructure projects, we have
                         consistently delivered solutions that exceed client expectations while maintaining the highest
                         safety and quality standards.
                     </p>
                 </div>
                 <div class="story-features">
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                         <div class="feature-icon">
                             <i class="fas fa-award"></i>
                         </div>
@@ -215,7 +216,7 @@
                                 and distribution systems</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="feature-icon">
                             <i class="fas fa-sun"></i>
                         </div>
@@ -224,7 +225,7 @@
                             <p>100MW solar installation with complete grid integration and monitoring systems</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                         <div class="feature-icon">
                             <i class="fas fa-city"></i>
                         </div>
@@ -234,7 +235,7 @@
                                 lighting and power distribution</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                         <div class="feature-icon">
                             <i class="fas fa-hospital"></i>
                         </div>
@@ -318,21 +319,16 @@
                             energy solutions since 1987.
                         </p>
                         <div class="social-links">
-                            <a href="#" class="social-link" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                            <a href="https://www.linkedin.com/company/jeogroup" class="social-link"
+                                aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/jeogroupofficial/" class="social-link"
+                                aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="mailto:info@jeogroup.com" class="social-link" aria-label="Email"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a href="#" class="social-link" aria-label="Website" target="_blank"><i
+                                    class="fas fa-globe"></i></a>
+                            <a href="tel:+917554261787" class="social-link" aria-label="Phone"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
 
@@ -440,6 +436,9 @@
             });
         });
     </script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 900, easing: 'ease-in-out', once: true, mirror: false });</script>
 </body>
 
 </html>

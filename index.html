@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/favicon.ico.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- AOS Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 
 <body>
@@ -64,11 +66,10 @@
         <ul class="mobile-nav-links">
             <li><a href="#home" onclick="closeMobileNav()"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="pages/about.html" onclick="closeMobileNav()"><i class="fas fa-info-circle"></i>About</a></li>
-            <li><a href="#group" onclick="closeMobileNav()"><i class="fas fa-building"></i>Our Group</a></li>
-            <li><a href="#culture" onclick="closeMobileNav()"><i class="fas fa-users"></i>Culture</a></li>
-            <li><a href="#policy" onclick="closeMobileNav()"><i class="fas fa-shield-alt"></i>Policy</a></li>
-            <li><a href="#expertise" onclick="closeMobileNav()"><i class="fas fa-cogs"></i>Expertise</a></li>
-            <li><a href="#contact" onclick="closeMobileNav()"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="pages/portfolio.html" onclick="closeMobileNav()"><i class="fas fa-briefcase"></i>Portfolio</a>
+            </li>
+            <li><a href="pages/services.html" onclick="closeMobileNav()"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="pages/products.html" onclick="closeMobileNav()"><i class="fas fa-box"></i>Products</a></li>
         </ul>
     </div>
 
@@ -76,11 +77,12 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Engineering Excellence.<br><span class="highlight">Empowering India.</span></h1>
-                <p>A Legacy of Innovation, A Future of Possibilities. With a strong foundation built in 1987, JEO Group
+                <h1 data-aos="fade-up">Engineering Excellence.<br><span class="highlight">Empowering India.</span></h1>
+                <p data-aos="fade-up" data-aos-delay="100">A Legacy of Innovation, A Future of Possibilities. With a
+                    strong foundation built in 1987, JEO Group
                     has emerged as one of India's leading multifaceted business conglomerates, specializing in power
                     transformers, solar solutions, electrical contracting, and turnkey infrastructure projects.</p>
-                <a href="#about" class="hero-btn">Request a Quote</a>
+                <a href="#about" class="hero-btn" data-aos="zoom-in" data-aos-delay="200">Request a Quote</a>
             </div>
         </div>
     </section>
@@ -89,9 +91,13 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <h2>JEO Group – Engineering Excellence. Empowering India.</h2>
-                <p class="about-subtitle">A Legacy of Innovation, A Future of Possibilities</p>
-                <p class="about-description">With a strong foundation built in 1987, JEO Group has emerged as one of
+                <h2 data-aos="fade-up">About JEO Group</h2>
+                <p data-aos="fade-up" data-aos-delay="100"
+                    style="color: var(--accent-400) !important; font-style: italic; font-weight: bold; margin-bottom: 1rem;">
+                    Legacy of
+                    innovation,
+                    a future of possibilities...</p>
+                <p class=" about-description">With a strong foundation built in 1987, JEO Group has emerged as one of
                     India's leading multifaceted business conglomerates. We are driven by a vision to shape
                     infrastructure, energize communities, and engineer solutions that uplift industries and lives alike.
                 </p>
@@ -109,42 +115,42 @@
     <section id="portfolio" class="our-group">
         <div class="container">
             <div class="group-header">
-                <h2>Our Group</h2>
-                <p>Four Pillars of Excellence Under One Vision</p>
+                <h2 data-aos="fade-up">Our Group Companies</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Meet the companies that power our vision...</p>
             </div>
             <div class="group-grid">
-                <div class="group-card">
+                <a href="pages/samriddhi.html" class="group-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-icon">
                         <img src="images/Samriddhi-logo-1.png" alt="Samriddhi Industries" class="company-logo">
                     </div>
                     <h3>Samriddhi Industries</h3>
                     <p>Leading manufacturer of high-performance electrical components and industrial solutions</p>
                     <div class="card-glow"></div>
-                </div>
-                <div class="group-card">
+                </a>
+                <a href="pages/engineers-associates.html" class="group-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon">
                         <img src="images/Engineers-Associates-logo.png" alt="Engineers Associates" class="company-logo">
                     </div>
                     <h3>Engineers Associates</h3>
                     <p>Expert engineering consultancy and project management services for complex infrastructure</p>
                     <div class="card-glow"></div>
-                </div>
-                <div class="group-card">
+                </a>
+                <a href="pages/aditya.html" class="group-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-icon">
                         <img src="images/Aditya-Logo-1.png" alt="Aditya Enterprises" class="company-logo">
                     </div>
                     <h3>Aditya Enterprises</h3>
                     <p>Specialized in electrical contracting and turnkey project execution across India</p>
                     <div class="card-glow"></div>
-                </div>
-                <div class="group-card">
+                </a>
+                <a href="pages/elecfab.html" class="group-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="card-icon">
                         <img src="images/Elecfab-Logo.png" alt="Elec Fab" class="company-logo">
                     </div>
                     <h3>Elec Fab</h3>
                     <p>Advanced fabrication facility for transmission and distribution line materials</p>
                     <div class="card-glow"></div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -153,11 +159,11 @@
     <section class="our-culture">
         <div class="container">
             <div class="culture-header">
-                <h2>Our Culture</h2>
-                <p>The Values That Drive Our Excellence</p>
+                <h2 data-aos="fade-up">Our Culture</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Our values drive our success...</p>
             </div>
             <div class="culture-grid">
-                <div class="culture-card">
+                <div class="culture-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="culture-icon">
                         <i class="fas fa-heart"></i>
                     </div>
@@ -166,7 +172,7 @@
                         our customers with dedication, excellence naturally follows. That's why exceeding expectations
                         is not just a goal — it's our everyday commitment and culture.</p>
                 </div>
-                <div class="culture-card">
+                <div class="culture-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="culture-icon">
                         <i class="fas fa-award"></i>
                     </div>
@@ -176,7 +182,7 @@
                         protect it fiercely, knowing it's the foundation of lasting trust and long-term relationships.
                     </p>
                 </div>
-                <div class="culture-card">
+                <div class="culture-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="culture-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
@@ -185,7 +191,7 @@
                         always aim higher. By setting bold, ambitious goals, we push boundaries and drive our team to
                         achieve more than what's expected — consistently raising the bar.</p>
                 </div>
-                <div class="culture-card">
+                <div class="culture-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="culture-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
@@ -1488,6 +1494,9 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 900, easing: 'ease-in-out', once: true, mirror: false });</script>
 </body>
 
 </html>

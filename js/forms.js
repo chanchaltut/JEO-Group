@@ -4,7 +4,7 @@
 class ContactFormHandler {
     constructor() {
         this.initializeForms();
-        this.showWelcomeMessage();
+        this.initializeCTAButtons();
     }
 
     initializeForms() {
@@ -13,6 +13,113 @@ class ContactFormHandler {
         
         contactForms.forEach(form => {
             this.setupForm(form);
+        });
+    }
+
+    initializeCTAButtons() {
+        // Handle CTA buttons with SweetAlert feedback
+        const ctaButtons = document.querySelectorAll('.hero-btn, .cta-btn, .nav-cta');
+        
+        ctaButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const href = button.getAttribute('href');
+                
+                // If it's a contact link, show contact info
+                if (href && href.includes('contact')) {
+                    e.preventDefault();
+                    this.showContactInfo();
+                }
+                // If it's a quote request, show quote info
+                else if (button.textContent.toLowerCase().includes('quote')) {
+                    e.preventDefault();
+                    this.showQuoteInfo();
+                }
+                // If it's a project start, show project info
+                else if (button.textContent.toLowerCase().includes('project')) {
+                    e.preventDefault();
+                    this.showProjectInfo();
+                }
+            });
+        });
+    }
+
+    showContactInfo() {
+        Swal.fire({
+            icon: 'info',
+            title: 'Get in Touch',
+            html: `
+                <p>We're here to help with all your electrical and infrastructure needs!</p>
+                <div style="text-align: left; margin: 20px 0;">
+                    <p><strong>📞 Phone:</strong> +91 1234567890</p>
+                    <p><strong>📧 Email:</strong> info@jeogroup.com</p>
+                    <p><strong>📍 Address:</strong> JEO Group Headquarters, India</p>
+                </div>
+                <p>You can also fill out our contact form for detailed inquiries.</p>
+            `,
+            confirmButtonColor: '#4f9cf9',
+            confirmButtonText: 'Fill Contact Form',
+            showCancelButton: true,
+            cancelButtonText: 'Close'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'pages/contact.html';
+            }
+        });
+    }
+
+    showQuoteInfo() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Request a Quote',
+            html: `
+                <p>Ready to get started with your project?</p>
+                <div style="text-align: left; margin: 20px 0;">
+                    <p><strong>What we need:</strong></p>
+                    <ul style="text-align: left;">
+                        <li>Project requirements</li>
+                        <li>Timeline</li>
+                        <li>Budget considerations</li>
+                        <li>Technical specifications</li>
+                    </ul>
+                </div>
+                <p>Our team will provide you with a detailed quote within 24 hours.</p>
+            `,
+            confirmButtonColor: '#4f9cf9',
+            confirmButtonText: 'Contact Us',
+            showCancelButton: true,
+            cancelButtonText: 'Close'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'pages/contact.html';
+            }
+        });
+    }
+
+    showProjectInfo() {
+        Swal.fire({
+            icon: 'info',
+            title: 'Start Your Project',
+            html: `
+                <p>Let's bring your vision to life!</p>
+                <div style="text-align: left; margin: 20px 0;">
+                    <p><strong>Our process:</strong></p>
+                    <ol style="text-align: left;">
+                        <li>Initial consultation</li>
+                        <li>Project planning</li>
+                        <li>Detailed proposal</li>
+                        <li>Execution & delivery</li>
+                    </ol>
+                </div>
+                <p>We handle projects of all sizes with the same dedication to quality.</p>
+            `,
+            confirmButtonColor: '#4f9cf9',
+            confirmButtonText: 'Get Started',
+            showCancelButton: true,
+            cancelButtonText: 'Close'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'pages/contact.html';
+            }
         });
     }
 
@@ -124,50 +231,6 @@ class ContactFormHandler {
             confirmButtonText: 'Try Again'
         });
     }
-
-    showWelcomeMessage() {
-        // Check if this is the first visit to the current page
-        const currentPage = window.location.pathname;
-        const visitedKey = `visited_${currentPage.replace(/\//g, '_')}`;
-        
-        if (!localStorage.getItem(visitedKey)) {
-            let title, text, buttonText;
-            
-            if (currentPage.includes('contact')) {
-                title = 'Welcome to JEO Group!';
-                text = 'We\'re here to help with all your electrical and infrastructure needs. Feel free to reach out!';
-                buttonText = 'Get Started';
-            } else if (currentPage.includes('about')) {
-                title = 'About JEO Group';
-                text = 'Discover our journey of engineering excellence and innovation since 1987.';
-                buttonText = 'Learn More';
-            } else if (currentPage.includes('services')) {
-                title = 'Our Services';
-                text = 'Explore our comprehensive range of electrical and infrastructure solutions.';
-                buttonText = 'Explore Services';
-            } else if (currentPage.includes('portfolio')) {
-                title = 'Our Portfolio';
-                text = 'Take a look at our successful projects and achievements across India.';
-                buttonText = 'View Projects';
-            } else {
-                title = 'Welcome to JEO Group!';
-                text = 'Engineering Excellence. Empowering India with innovative infrastructure and sustainable energy solutions since 1987.';
-                buttonText = 'Explore Our Services';
-            }
-
-            Swal.fire({
-                icon: 'info',
-                title: title,
-                text: text,
-                confirmButtonColor: '#4f9cf9',
-                confirmButtonText: buttonText,
-                timer: 6000,
-                timerProgressBar: true
-            });
-            
-            localStorage.setItem(visitedKey, 'true');
-        }
-    }
 }
 
 // Utility functions for SweetAlert
@@ -214,9 +277,9 @@ class AlertUtils {
 
     static showConfirmation(title, text, confirmText = 'Yes', cancelText = 'No') {
         return Swal.fire({
-            icon: 'question',
             title: title,
             text: text,
+            icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#4f9cf9',
             cancelButtonColor: '#6c757d',
@@ -226,16 +289,11 @@ class AlertUtils {
     }
 }
 
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize contact form handler
+// Initialize form handler when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
     new ContactFormHandler();
-    
-    // Add global alert utilities to window for easy access
-    window.AlertUtils = AlertUtils;
 });
 
-// Export for module usage (if needed)
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { ContactFormHandler, AlertUtils };
-} 
+// Export for use in other scripts
+window.ContactFormHandler = ContactFormHandler;
+window.AlertUtils = AlertUtils; 

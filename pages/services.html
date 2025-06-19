@@ -19,6 +19,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- AOS Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon.ico.png">
@@ -68,11 +70,10 @@
         </div>
         <ul class="mobile-nav-links">
             <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
             <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
             <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
             <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Get in touch</a></li>
         </ul>
     </nav>
 
@@ -95,15 +96,35 @@
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content">
-                <div class="about-hero-text">
-                    <h2>Our Areas of<br><span class="highlight">Expertise</span></h2>
-                    <p class="hero-subtitle">Comprehensive Solutions for Modern Infrastructure</p>
-                    <p class="hero-description">
-                        JEO Group brings together years of experience, technical mastery, and a commitment to excellence
-                        across multiple domains in the power and infrastructure sectors. Our capabilities span from
-                        manufacturing to turnkey project execution, making us a one-stop solution for high-quality,
-                        reliable, and scalable energy infrastructure.
-                    </p>
+                <div class="about-hero-text" data-aos="fade-right">
+                    <h2>Our Services</h2>
+                    <p class="hero-subtitle">Comprehensive Electrical & Infrastructure Solutions</p>
+                    <p class="hero-description">JEO Group delivers a full spectrum of services...</p>
+                </div>
+                <div class="about-hero-stats">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>🏭 Plant Design & Engineering</h3>
+                        <p>Our in-house engineering team provides holistic plant layout planning, design optimization,
+                            and
+                            electrical system engineering. We ensure that every plant we help build operates
+                            efficiently,
+                            safely, and sustainably from day one.</p>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>☀️ Solar Power Solutions</h3>
+                        <p>Our solar division designs, installs, and maintains solar energy systems for residential,
+                            commercial, and industrial clients. From rooftop setups to ground-mounted solutions, we
+                            empower
+                            you to transition to clean and renewable energy with confidence.</p>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3>⚡ Power & Distribution Transformer Manufacturing</h3>
+                        <p>We specialize in the design and manufacturing of robust, high-performance power and
+                            distribution
+                            transformers. Our units are built to meet industry standards and customized for diverse
+                            voltage
+                            applications across utilities, commercial zones, and industrial plants.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,24 +207,11 @@
         <div class="container">
             <div class="story-content">
                 <div class="story-text">
-                    <h2>Why Choose JEO Group?</h2>
-                    <p>
-                        With over 37 years of experience in the industry, JEO Group has established itself as a trusted
-                        partner for electrical and infrastructure solutions across India. Our commitment to quality,
-                        innovation, and customer satisfaction sets us apart.
-                    </p>
-                    <p>
-                        We combine traditional engineering excellence with modern technology to deliver solutions that
-                        are not only reliable but also future-ready. Our ISO 9001:2008 certification ensures that every
-                        project meets the highest quality standards.
-                    </p>
-                    <p>
-                        From concept to commissioning, our experienced team manages every aspect of your project with
-                        precision and professionalism, ensuring timely delivery and exceptional results.
-                    </p>
+                    <h2 data-aos="fade-up">Why Choose JEO Group?</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Our strengths set us apart in the industry.</p>
                 </div>
                 <div class="story-features">
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                         <div class="feature-icon">
                             <i class="fas fa-certificate"></i>
                         </div>
@@ -212,7 +220,7 @@
                             <p>Quality management systems that ensure consistent excellence in all our services</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="feature-icon">
                             <i class="fas fa-calendar-alt"></i>
                         </div>
@@ -221,7 +229,7 @@
                             <p>Decades of proven expertise in electrical and infrastructure solutions</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                         <div class="feature-icon">
                             <i class="fas fa-users"></i>
                         </div>
@@ -230,7 +238,7 @@
                             <p>Highly skilled technical and management professionals dedicated to your success</p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                         <div class="feature-icon">
                             <i class="fas fa-handshake"></i>
                         </div>
@@ -247,13 +255,11 @@
     <!-- Service CTA Section -->
     <section class="about-cta">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content" data-aos="zoom-in">
                 <h2>Ready to Start Your Project?</h2>
-                <p>Let our experts help you design and implement the perfect solution for your electrical and
-                    infrastructure needs.</p>
+                <p>Let's work together to bring your electrical and infrastructure vision to life.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="cta-btn primary">Request a Consultation</a>
-                    <a href="about.html" class="cta-btn secondary">Learn More About Us</a>
+                    <a href="contact.html" class="cta-btn primary">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -273,21 +279,16 @@
                             energy solutions since 1987.
                         </p>
                         <div class="social-links">
-                            <a href="#" class="social-link" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                            <a href="https://www.linkedin.com/company/jeogroup" class="social-link"
+                                aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/jeogroupofficial/" class="social-link"
+                                aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="mailto:info@jeogroup.com" class="social-link" aria-label="Email"><i
+                                    class="fas fa-envelope"></i></a>
+                            <a href="#" class="social-link" aria-label="Website" target="_blank"><i
+                                    class="fas fa-globe"></i></a>
+                            <a href="tel:+917554261787" class="social-link" aria-label="Phone"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
 
@@ -395,6 +396,9 @@
             });
         });
     </script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 900, easing: 'ease-in-out', once: true, mirror: false });</script>
 </body>
 
 </html>
