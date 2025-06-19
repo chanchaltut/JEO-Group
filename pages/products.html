@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - JEO Group | Electrical & Infrastructure Solutions</title>
+    <meta name="description"
+        content="Explore JEO Group's comprehensive range of electrical products, transformers, solar solutions, and infrastructure equipment. Quality products for all your electrical needs.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.ico.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/Jeo-logo.png" alt="JEO Group" class="logo-img">
+                    </a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                </ul>
+
+                <a href="contact.html" class="nav-cta">Get in touch</a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-nav-toggle" id="mobileNavToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <img src="../images/Jeo-logo.png" alt="JEO Group" class="logo-img">
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="products.html" class="active"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Get in touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="breadcrumb-current">Products</span>
+                </nav>
+                <h1>Our Products</h1>
+                <p>Comprehensive range of electrical and infrastructure solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section class="products-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Products for Every Need</h2>
+                <p>From transformers to solar solutions, we offer a complete range of electrical and infrastructure
+                    products designed to meet the highest standards of quality and performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="transformers">Transformers</button>
+                <button class="category-btn" data-category="solar">Solar Solutions</button>
+                <button class="category-btn" data-category="fabrication">Fabrication</button>
+                <button class="category-btn" data-category="equipment">Equipment</button>
+                <button class="category-btn" data-category="materials">Materials</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Transformers Category -->
+                <div class="product-card" data-category="transformers">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-14.jpg.jpeg" alt="Power Transformers" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Power Transformers</h3>
+                        <p>High-quality power transformers for distribution and transmission applications, available in
+                            various ratings and configurations.</p>
+                        <div class="product-specs">
+                            <span class="spec">11kV - 220kV</span>
+                            <span class="spec">Oil-filled</span>
+                            <span class="spec">Custom Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="transformers">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-15.jpg.jpeg" alt="Distribution Transformers"
+                            class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Distribution Transformers</h3>
+                        <p>Efficient distribution transformers for residential and commercial applications, designed for
+                            optimal performance and longevity.</p>
+                        <div class="product-specs">
+                            <span class="spec">25kVA - 2500kVA</span>
+                            <span class="spec">11kV/0.4kV</span>
+                            <span class="spec">IS Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solar Solutions Category -->
+                <div class="product-card" data-category="solar">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-16.jpg.jpeg" alt="Solar Panels" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Solar PV Modules</h3>
+                        <p>High-efficiency monocrystalline and polycrystalline solar panels for residential and
+                            commercial installations.</p>
+                        <div class="product-specs">
+                            <span class="spec">300W - 550W</span>
+                            <span class="spec">Tier-1 Grade</span>
+                            <span class="spec">25 Year Warranty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="solar">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-17.jpg.jpeg" alt="Solar Inverters" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Solar Inverters</h3>
+                        <p>Advanced string and central inverters with maximum power point tracking for optimal energy
+                            conversion.</p>
+                        <div class="product-specs">
+                            <span class="spec">1kW - 1MW</span>
+                            <span class="spec">MPPT Technology</span>
+                            <span class="spec">Grid-tie/Off-grid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fabrication Category -->
+                <div class="product-card" data-category="fabrication">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-18.jpg.jpeg" alt="Transmission Towers" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Transmission Towers</h3>
+                        <p>Galvanized steel transmission towers for power line infrastructure, designed to withstand
+                            extreme weather conditions.</p>
+                        <div class="product-specs">
+                            <span class="spec">11kV - 400kV</span>
+                            <span class="spec">Hot-dip Galvanized</span>
+                            <span class="spec">IS:802 Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fabrication">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-19.jpg.jpeg" alt="Control Panels" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Electrical Control Panels</h3>
+                        <p>Custom-designed electrical control panels and switchgear for industrial and commercial
+                            applications.</p>
+                        <div class="product-specs">
+                            <span class="spec">LT/HT Panels</span>
+                            <span class="spec">IP65 Rating</span>
+                            <span class="spec">Custom Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipment Category -->
+                <div class="product-card" data-category="equipment">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-20.jpg.jpeg" alt="Switchgear" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Switchgear & Protection</h3>
+                        <p>Advanced switchgear and protection equipment for safe and reliable electrical distribution
+                            systems.</p>
+                        <div class="product-specs">
+                            <span class="spec">11kV - 33kV</span>
+                            <span class="spec">SF6/Vacuum</span>
+                            <span class="spec">Digital Protection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="equipment">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-43-1000x600.jpg.jpeg" alt="Motor Control Centers"
+                            class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Motor Control Centers</h3>
+                        <p>Intelligent motor control centers with variable frequency drives and advanced control
+                            systems.</p>
+                        <div class="product-specs">
+                            <span class="spec">0.5kW - 500kW</span>
+                            <span class="spec">VFD Compatible</span>
+                            <span class="spec">Smart Controls</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materials Category -->
+                <div class="product-card" data-category="materials">
+                    <div class="product-image">
+                        <img src="../images/qtq70fmfjpeg-25-900x540.jpg.jpeg" alt="HT/LT Cables" class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>HT/LT Cables</h3>
+                        <p>High-quality power cables for transmission and distribution applications, available in
+                            various specifications.</p>
+                        <div class="product-specs">
+                            <span class="spec">1.1kV - 33kV</span>
+                            <span class="spec">XLPE/PVC</span>
+                            <span class="spec">IS:7098 Standards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="materials">
+                    <div class="product-image">
+                        <img src="../images/home-slider03-1000x600.jpg.jpeg" alt="Electrical Hardware"
+                            class="product-img">
+                        <div class="product-overlay">
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Electrical Hardware</h3>
+                        <p>Complete range of electrical hardware including insulators, conductors, and line accessories.
+                        </p>
+                        <div class="product-specs">
+                            <span class="spec">Porcelain/Composite</span>
+                            <span class="spec">ACSR/AAAC</span>
+                            <span class="spec">IS Standards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="product-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Products</h2>
+                <p>Quality, reliability, and performance that you can trust</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Quality</h3>
+                    <p>All products are manufactured according to international standards and certified by recognized
+                        testing agencies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Warranty Protection</h3>
+                    <p>Comprehensive warranty coverage and after-sales support for all our products and solutions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored products and solutions designed to meet your specific requirements and applications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Expert technical support and consultation services to help you choose the right products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Choosing Products?</h2>
+                <p>Our technical experts are here to help you select the right products for your specific requirements.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn primary">
+                        <i class="fas fa-envelope"></i>
+                        Get Consultation
+                    </a>
+                    <a href="services.html" class="cta-btn secondary">
+                        <i class="fas fa-cogs"></i>
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="../images/Jeo-logo.png" alt="JEO Group" class="footer-logo-img">
+                        </div>
+                        <p class="footer-description">
+                            Engineering Excellence. Empowering India with innovative infrastructure and sustainable
+                            energy solutions since 1987.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Our Group</h4>
+                        <ul class="footer-links">
+                            <li><a href="samriddhi.html">Samriddhi Industries</a></li>
+                            <li><a href="engineers-associates.html">Engineers Associates</a></li>
+                            <li><a href="aditya.html">Aditya Enterprises</a></li>
+                            <li><a href="elecfab.html">Elec Fab</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2024 JEO Group. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <p>Made with passion in India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Navigation
+        const mobileNavToggle = document.getElementById('mobileNavToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+
+        function openMobileNav() {
+            mobileNav.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileNavToggle.addEventListener('click', openMobileNav);
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        mobileOverlay.addEventListener('click', closeMobileNav);
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll to Top
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        let mouseIdleTimer;
+
+        function showScrollButton() {
+            if (window.pageYOffset > window.innerHeight * 0.2) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        }
+
+        function handleMouseMovement() {
+            scrollToTopBtn.classList.remove('mouse-idle');
+            clearTimeout(mouseIdleTimer);
+            mouseIdleTimer = setTimeout(() => {
+                scrollToTopBtn.classList.add('mouse-idle');
+            }, 3000);
+        }
+
+        window.addEventListener('scroll', showScrollButton);
+        document.addEventListener('mousemove', handleMouseMovement);
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Product Category Filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
